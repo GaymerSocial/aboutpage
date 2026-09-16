@@ -4,7 +4,7 @@
 
 # Contributing to About.Gaymer.Social
 
-This is a [Stux.Group](https://stux.group) project under the [GaymerSocial](https://github.com/GaymerSocial) organization. Gaymer.Social was discontinued in September 2026; this repo is now a minimal static redirect shell, not a live site. This document exists for anyone with write access to the repo who wants to work on it consistently with how it's actually built.
+This is [a Stux.Group Service](https://services.stux.group) under the [GaymerSocial](https://github.com/GaymerSocial) organization. Gaymer.Social was discontinued in September 2026; this repo is now a minimal static redirect shell, not a live site. This document exists for anyone with write access to the repo who wants to work on it consistently with how it's actually built.
 
 ## Local setup
 
