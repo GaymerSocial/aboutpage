@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v2.1.7
+
+### Fixed
+- GitHub Pages was using the legacy branch-deploy build system, which can silently stop auto-deploying with no error recorded anywhere (discovered on SeasonalOverlaysLibrary — its live site served stale content for over an hour with no visible failure). Switched to GitHub Actions-based Pages deployment (`.github/workflows/pages.yml`), making every deploy an ordinary, observable CI run instead.
+
 ## v2.1.6
 
 ### Changed
