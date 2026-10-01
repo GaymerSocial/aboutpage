@@ -16,6 +16,7 @@ See the [README](README.md#local-development) for running the site on your own m
 - `_redirects` is the Netlify catch-all (`/* https://gaymer.social/ 301`) that sends every legacy About.Gaymer.Social URL to the main notice; `404.html` is the fallback for hosts that only support redirects via a custom 404 page
 - No build step, no framework, no analytics/tracking scripts
 - The dev-mode banner is client-side (inline script in `index.html`/`404.html`), shown automatically on `localhost`/`127.0.0.1`; append `?nodev=1` to preview the real redirect
+- This site is a redirect shell, so it has no sitemap; the redirect is a script in `index.html`/`404.html` (skipped on localhost so the dev banner shows) with a `<noscript>` meta refresh as fallback
 
 ## Versioning and changelog
 
