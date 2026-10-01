@@ -2,6 +2,12 @@
 
 All notable changes to this repo are documented here.
 
+## v2.2.1
+
+### Fixed
+
+- The footer's Created-with icons are optically sized, so the heart no longer looks bigger than the code and coffee icons
+
 ## v2.2.0
 
 ### Added
