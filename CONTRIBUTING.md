@@ -18,11 +18,14 @@ See the [README](README.md#local-development) for running the site on your own m
 - The dev-mode banner is client-side (inline script in `index.html`/`404.html`), shown automatically on `localhost`/`127.0.0.1`; append `?nodev=1` to preview the real redirect
 - This site is a redirect shell, so it has no sitemap; the redirect is a script in `index.html`/`404.html` (skipped on localhost so the dev banner shows) with a `<noscript>` meta refresh as fallback
 
-## Versioning and changelog
+## Versioning
 
-- The version lives in `VERSION.md` (a bare version string) — bump it on every release
-- Every release gets a `CHANGELOG.md` entry using `### Added` / `### Changed` / `### Fixed` subsections — never a bare bullet list directly under a version heading
-- `commit.sh` (bash) and `commit.bat` (Windows) hold the actual commit message and `git tag` for the current version — run one of them to commit and tag a release
+This project uses [Date Versioning](https://datevers.ing). To release:
+
+1. Add a `## vYY.MM.DD` entry at the top of `CHANGELOG.md`, with its sections in this order: Added, Changed, Fixed, Removed, Security, Deprecated.
+2. Set `VERSION.md` to the same bare version (no `v`): today's **UTC** date as `YY.MM.DD`, or `YY.MM.DD-1`, `-2`… for later releases the same UTC day. Never a future date. Use UTC, not local time: just after midnight in the UK it is still the previous day in UTC.
+3. Run `bash tests/version.sh`.
+4. Run `./commit.sh` (or `commit.bat` on Windows). It checks the version, commits and tags `vYY.MM.DD`, and never pushes.
 
 ## Before committing
 

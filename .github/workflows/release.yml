@@ -1,6 +1,6 @@
 name: Release
 
-# Publishes a GitHub Release whenever commit.sh's vX.Y.Z tag is pushed, with
+# Publishes a GitHub Release whenever commit.sh's vYY.MM.DD tag is pushed, with
 # the notes taken from the matching CHANGELOG.md section.
 
 on:
